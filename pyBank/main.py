@@ -28,40 +28,7 @@ Greatest Increase in Profits: Feb-2012 ($1926159)
 Greatest Decrease in Profits: Sep-2013 ($-2196167)
 In addition, your final script should both print the analysis to the terminal and export a text file with the results.
 
-
-#read the csv file. 
-#writing title for the output (see zipper example) 
-
-import os
-import csv
-
-file = os.path.join("..", "Resources", "budget_data.csv")
-
-with open(budget_data, 'r', newline=" ") as csvfile:
-    csvreader = csv.reader(csvfile, delimiter " ") #csv reader specifiles delimiter and variable to hold contents
-        print(csvreader) 
-        data = list(csvreader)
-        rowCount = len(data) #gets the number of rows ....use this later to write file 
-
-    csvHeader = next(csvreader)
-        print(f"CSV Header: {csv_header}")
-
-    for row in csvreader:
-        print(row)
-
-outPutPath = os.path.join("..", "pyRoll", "new.csv)  #this is simply added in here, must check 
-    
-    with open(outPutPath, 'w', newline = " ") as csvFileWrite:
-    csvwriter = csv.writer(csvFileWrite, deliminiter = " ")
-
-    csvwriter.writerow (["Financial Analysis"])
-    csvwriter.writerow (["------------------"])
-    csvwriter.writerow (["Total Months: " + str(rowCount)])
-
-
-
-
-___________________________________________-
+__________________________________________-
 
 import os
 import csv
@@ -71,6 +38,8 @@ pyBank = os.path.join("..", "Resources", "budget_data.csv")
 title = []
 months = []
 profits = []
+monYear = []
+profitMar = []
 
 with open(pyBank, newline=" ") as csvfile: 
     csvreader = csv.reader(csvfile, delimiter = ",")
