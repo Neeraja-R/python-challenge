@@ -16,7 +16,7 @@ with open(pyBank, newline=" ") as csvfile:
         print(row)
 
     data = csvfile.split(",")     #columns split into two and define
-    while (row >= 1)
+    while row >= [1]
         monYear.append(float(data[0]))
         profitMar.append(float(data[1]))
 

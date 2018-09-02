@@ -16,7 +16,7 @@ with open(pyRoll, newline=" ") as csvfile:
         print(row)
     
     data = csvfile.split(",")
-    while(row >= 1)
+    while row >= [1]
         voter_ID.append(float(data[0]))
         county.append(str(data[1]))
         candidate.append(str(data[2]))
