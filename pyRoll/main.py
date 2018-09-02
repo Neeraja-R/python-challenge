@@ -17,7 +17,7 @@ O'Tooley: 3.000% (105630)
 -------------------------
 Winner: Khan
 -------------------------
-In addition, your final script should both print the analysis to the terminal and export a text file with the results.  '''
+In addition, your final script should both print the analysis to the terminal and export a text file with the results.  
 
 Three columns: Voter ID, County, and Candidate.
 
@@ -31,7 +31,8 @@ The total number of votes each candidate won
 
 The winner of the election based on popular vote.
 
-____________________________________________________
+____________________________________________________ 
+'''
 
 import os
 import csv
@@ -62,9 +63,17 @@ with open(pyRoll, newline=" ") as csvfile:
             listCandidates_totalVotes = [Counter(candidate)]
 
             percentVotes = [(count(:float(i))/float(totalVotes))*100 for i in listCandidates]
-
-            winner = max(percentVotes)
+            winner = max(percentVotes)   
                 
+            
+            for s1, s2 in zip(listCandidates_totalVotes, percentVotes)
+            
+                
+print("Election Results")
+print("Total votes: " + totalVotes)
+print (s1, s2)
+print("Winner :" + winner)
+
 
     
 

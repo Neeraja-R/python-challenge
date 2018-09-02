@@ -55,15 +55,22 @@ with open(pyBank, newline=" ") as csvfile:
         months = enumerate(monYear)
         profits = sum(profitMar)
         difference = [profits[i+1] - profits[i] for i in range len[profits-1]]
-            avgDiff = [difference/len(profits-1]
+            avgDiff = sum(difference)/len(profits-1)
             '''this is how you can make a loop in list form'''
 
         maxValue = max(difference)
-            incGreat = difference.index(maxValue)
-        
+            indexInc = difference.index(maxValue)
+            incValues = data.pop(indexInc)
         minValue = min(difference)
-            decGreat = difference.index(minValue)
-
+            indexDec = difference.index(minValue)
+            decValues = data.pop(indexDec)
+                                      
+print ("Financial Analysis")
+print ("Total Months: " + months)
+print ("Total: $" + profits)
+print ("Average Change: $" + avgDiff)
+print ("Greatest Increase in Profits: $" + incValue)
+print("Greatest Decrease in Profits: $" + decValues)
 
         
 
